@@ -16,8 +16,8 @@ interactive Streamlit web application for evaluation.
 - **Name:** Breast Cancer Wisconsin (Diagnostic) Data Set
 - **Source:** UCI Machine Learning Repository (also available built-in via
   `sklearn.datasets.load_breast_cancer`, which mirrors the original UCI dataset)
-- **Instances:** 569 (≥ 500 required ✅)
-- **Features:** 30 numeric features (≥ 12 required ✅) — computed from digitized FNA
+- **Instances:** 569 (≥ 500 required)
+- **Features:** 30 numeric features (≥ 12 required) — computed from digitized FNA
   images, describing characteristics of cell nuclei such as radius, texture,
   perimeter, area, smoothness, compactness, concavity, symmetry, and fractal
   dimension (mean, standard error, and "worst"/largest value for each).
@@ -50,7 +50,7 @@ project-folder/
 ## d. Models Used
 
 All 5 models were trained on the **same dataset and same train/test split** described
-above. Logistic Regression and kNN were trained on standardized (scaled) features;
+above. Logistic Regression and kNN were trained on standardised (scaled) features;
 Decision Tree, Naive Bayes, and Random Forest were trained on raw features (scale
 does not affect them).
 
@@ -70,8 +70,8 @@ does not affect them).
 
 | ML Model Name | Observation about model performance |
 |---|---|
-| Logistic Regression | Best overall performer on this dataset. The classes are close to linearly separable in the standardized feature space, so a simple linear decision boundary generalizes very well, giving the highest accuracy, F1, and MCC among all models. |
-| Decision Tree | Weakest performer. A single unpruned tree overfits the training data and is sensitive to small variations in the 30 correlated features, which hurts generalization — it has the lowest accuracy, AUC, and MCC. |
+| Logistic Regression | Best overall performer on this dataset. The classes are close to linearly separable in the standardised feature space, so a simple linear decision boundary generalises very well, giving the highest accuracy, F1, and MCC among all models. |
+| Decision Tree | Weakest performer. A single unpruned tree overfits the training data and is sensitive to small variations in the 30 correlated features, which hurts generalisation — it has the lowest accuracy, AUC, and MCC. |
 | kNN | Strong performer after feature scaling, since scaling puts all 30 features on comparable ranges for distance computation. Slightly behind Logistic Regression, but ties Random Forest on F1/MCC. |
 | Naive Bayes | Decent AUC (probability ranking is good) but lower precision/accuracy than the top models. The Gaussian independence assumption is a simplification given that many of the 30 features (e.g., radius/perimeter/area) are highly correlated, which limits its ceiling. |
 | Random Forest (Ensemble) | Very strong and stable performance — bagging many trees fixes the overfitting problem seen in the single Decision Tree, and it achieves the second-highest AUC overall, showing the value of ensembling. |
