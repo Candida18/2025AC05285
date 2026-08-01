@@ -27,7 +27,7 @@ from sklearn.metrics import (
 # ------------------------------------------------------------------
 st.set_page_config(page_title="Breast Cancer Classifier Comparison", layout="wide")
 st.title("🔬 Breast Cancer Classification — Model Comparison App")
-st.caption("ML Assignment 2 — Logistic Regression | Decision Tree | kNN | Naive Bayes | Random Forest")
+st.caption("2025AC05285 | ML Assignment 2 — Logistic Regression | Decision Tree | kNN | Naive Bayes | Random Forest")
 
 MODEL_DIR = "model"
 
