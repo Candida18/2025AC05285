@@ -1,4 +1,4 @@
-# Breast Cancer Classification — ML Assignment 2
+# Breast Cancer Classification — 2025AC05285 | ML Assignment 2
 
 ## a. Problem Statement
 
@@ -27,7 +27,7 @@ interactive Streamlit web application for evaluation.
 
 ## c. GitHub Repository Link
 
-> **`https://github.com/Candida18/2025AC05285`**
+> **<a href='https://github.com/Candida18/2025AC05285'>`https://github.com/Candida18/2025AC05285`</a>**
 
 Repository structure:
 ```
@@ -98,7 +98,7 @@ streamlit run app.py
 
 Deployed on **Streamlit Community Cloud**:
 
-> **Live App Link:** `https://2025ac05285.streamlit.app/`
+> **Live App Link:** <a href='https://2025ac05285.streamlit.app/'>`https://2025ac05285.streamlit.app/`</a>
 
 Steps used: pushed this repo to GitHub → https://streamlit.io/cloud → signed in with
 GitHub → "New App" → selected this repository/branch → set main file to `app.py` →
